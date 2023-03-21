@@ -1,19 +1,24 @@
 import './App.css';
+import Card from './components/Card/Card';
+import {user_data} from './components/data.js';
 
 function Banner(props) {
   return (
-    <div className="Banner">
-      <header>
+    <header className="Banner">
         <h1>Welcome to Sextant!</h1>
-      </header>
-    </div>
+    </header>
   );
 }
 
 function CardField(props) {
   return (
-    <div className="CardField">
-      <p>Insert cards here</p>
+    <div className="wrapper">
+      {user_data.map(data =>
+        <Card
+          title = {data.title}
+          data = {data.data}
+        />
+      )}
     </div>
   );
 }
