@@ -15,8 +15,9 @@ function CardField(props) {
     <div className="wrapper">
       {user_data.map(data =>
         <Card
+          key = {data.title}
           title = {data.title}
-          data = {data.data}
+          IP_URL= {data.url}
         />
       )}
     </div>

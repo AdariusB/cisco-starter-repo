@@ -1,11 +1,14 @@
 import './Card.css';
 import React from 'react';
+import IPFetcher from '../IPFetcher/IPFetcher.js';
 
 export default function Card(props) {
     return (
         <div className="Card">
             <h2 className="cardTitle">{props.title}</h2>
-            <h3>{props.data}</h3>
+            <IPFetcher
+                IP_URL={ props.IP_URL }
+            />
         </div>
     )
 }

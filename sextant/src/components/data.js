@@ -1,10 +1,10 @@
 export const user_data = [
     {
-        title: 'User Public IP',
-        data: '420' 
+        title: 'User Public IPv4',
+        url: 'https://api.ipify.org?format=json' 
     },
     {
-        title: 'User Latency',
-        data: '69' 
+        title: 'User Public IPv6',
+        url: 'https://api64.ipify.org?format=json' 
     }
 ]
